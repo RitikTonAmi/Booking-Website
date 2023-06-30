@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shows</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<body>
+    <div class="container">
+
+
+        <section class="header2">
+            <h1>Find and book <a href="#movies">movies,</a>
+                <a href="#concerts">concerts</a> &
+                <a href="#stand-up">stand-up</a>
+            </h1>
+            <form onsubmit="return setAction(this)" method="get" class="search">
+                <input type="text" placeholder="search for anything" id="q">
+                <button type="submit"><img src='img/search-icon.jpg'></button>
+            </form>
+        </section>
+        <button id="myBtn" onclick="window.location.href='cart.html';"><img style="width: 20px; height:20px"
+                src='img/cart.jpg'></button>
+
+
+        <section class="movies" id="movies">
+            <h1>MOVIES</h1>
+            <div class="box">
+                <div class="current-movies">
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/movie1.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">The Flash</h3>
+                        <p class="screen-name">Screen : IMAX 2D</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('The Flash')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/movie2.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Spider-Man: Across the Spider-Verse</h3>
+                        <p class="screen-name">Screen : 4DX</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Spider-Man: Across the Spider-Verse')" class="btn">Buy
+                                Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/movie3.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Transformers: Rise of the Beasts</h3>
+                        <p class="screen-name">Screen : IMAX 3D</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Transformers: Rise of the Beasts')" class="btn">Buy
+                                Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/movie4.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Mission: Impossible - Dead Reckoning, Part One</h3>
+                        <p class="screen-name">Screen : IMAX 3D</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Mission: Impossible - Dead Reckoning, Part One')"
+                                class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/movie5.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Oppenheimer</h3>
+                        <p class="screen-name">Screen : 4DX</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Oppenheimer')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/movie6.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Kraven the Hunter</h3>
+                        <p class="screen-name">Screen : IMAX 2D</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Kraven the Hunter')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="concerts" id="concerts">
+            <h1>CONCERTS</h1>
+            <div class="box">
+                <div class="current-movies">
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/concert1.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Drake</h3>
+                        <p class="screen-name">Location : Austin</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Drake')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/concert2.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Metro Boomin</h3>
+                        <p class="screen-name">Location : San Francisco</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Metro Boomin')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/concert3.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Kendrick Lamar</h3>
+                        <p class="screen-name">Location : New York</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Kendrick Lamar')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/concert4.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Charlie Puth</h3>
+                        <p class="screen-name">Location : Seattle</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Charlie Puth')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/concert5.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Harry Styles</h3>
+                        <p class="screen-name">Location : Denver</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Harry Styles')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/concert6.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Ed Sheeran</h3>
+                        <p class="screen-name">Location : Chicago</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Ed Sheeran')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stand-up" id="stand-up">
+            <h1>STAND-UP</h1>
+            <div class="box">
+                <div class="current-movies">
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/stand-up1.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Anubhav Singh Bassi</h3>
+                        <p class="screen-name">Location : Delhi</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Anubhav Singh Bassi')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/stand-up2.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Aakash Gupta</h3>
+                        <p class="screen-name">Location : Noida</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Aakash Gupta')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/stand-up3.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Biswa Kalyan Rath</h3>
+                        <p class="screen-name">Location : Mumbai</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Biswa Kalyan Rath')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/stand-up4.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Vir Das</h3>
+                        <p class="screen-name">Location : Lucknow</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Vir Das')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/stand-up5.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Samay Raina</h3>
+                        <p class="screen-name">Location : Jaipur</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Samay Raina')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="current-movie">
+                        <div class="cm-img-box">
+                            <img src="img/stand-up6.jpg" alt="">
+                        </div>
+                        <h3 class="movie-title">Rahul Dua</h3>
+                        <p class="screen-name">Location : Pune</p>
+                        <div class="booking">
+                            <h2 class="price">₹500</h2>
+                            <button onclick="submitValue('Rahul Dua')" class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function submitValue(x) {
+        localStorage.setItem('myValue', x);
+
+        window.location.href = 'cart.html';
+    }
+
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+
+    function setAction(form) {
+        //   form.action = "register.html";
+        //   if (form.action='movis') {
+
+        //   }
+        var x = document.getElementById("q").value;
+        if (x == 'The Flash') {
+            window.scrollBy(0, 600);
+
+        } else if (x == 'Spider-Man: Across the Spider-Verse') {
+            window.scrollBy(0, 600);
+
+        } else if (x == 'Transformers: Rise of the Beasts') {
+            window.scrollBy(0, 600);
+
+        } else if (x == 'Mission: Impossible - Dead Reckoning, Part One') {
+            window.scrollBy(0, 600);
+
+        } else if (x == 'Oppenheimer') {
+            window.scrollBy(0, 600);
+
+        } else if (x == 'Kraven the Hunter') {
+            window.scrollBy(0, 600);
+
+        } else if (x == 'Drake') {
+            window.scrollBy(0, 1500);
+
+        } else if (x == 'Metro Boomin') {
+            window.scrollBy(0, 1500);
+
+        } else if (x == 'Kendrick Lamar') {
+            window.scrollBy(0, 1500);
+
+        } else if (x == 'Charlie Puth') {
+            window.scrollBy(0, 1500);
+
+        } else if (x == 'Harry Styles') {
+            window.scrollBy(0, 1500);
+
+        } else if (x == 'Ed Sheeran') {
+            window.scrollBy(0, 1500);
+
+        }
+        else if (x == 'Anubhav Singh Bassi') {
+            window.scrollBy(0, 2600);
+
+        }
+        else if (x == 'Aakash Gupta') {
+            window.scrollBy(0, 2600);
+
+        }
+        else if (x == 'Biswa Kalyan Rath') {
+            window.scrollBy(0, 2600);
+
+        }
+        else if (x == 'Vir Das') {
+            window.scrollBy(0, 2600);
+
+        }
+        else if (x == 'Samay Raina') {
+            window.scrollBy(0, 2600);
+
+        }
+        else if (x == 'Rahul Dua') {
+            window.scrollBy(0, 2600);
+
+        } else {
+            alert('The show you are looking for is not available.')
+        }
+    }
+
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+</script>
+
+</html
